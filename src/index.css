@@ -1,4 +1,5 @@
 /* ============= GLOBAL CSS =============== */
+/* Reset and design tokens used across the app (tours grid, cards, buttons, loading). */
 
 *,
 ::after,
@@ -12,6 +13,7 @@ html {
   font-size: 100%;
 } /*16px*/
 
+/* Design tokens: primary (green) scale, greys, and shared layout/shadow variables */
 :root {
   /* colors */
   --primary-100: #d1fae5;
@@ -223,6 +225,7 @@ ul {
 }
 /* alert */
 
+/* Spinner used by Loading.jsx: rotating border creates the loading indicator */
 @keyframes spinner {
   to {
     transform: rotate(360deg);
@@ -253,17 +256,20 @@ ul {
   margin-top: 1rem;
 }
 /* ============= PROJECT CSS =============== */
+/* Layout and styles for main, tours grid, single tour card, and responsive breakpoints */
 
 main {
   width: 90vw;
   max-width: var(--max-width);
   margin: 5rem auto;
 }
+/* Grid container for tour cards; columns change at 768px and 992px (see media queries below) */
 .tours {
   padding: 2rem 0;
   display: grid;
   gap: 2rem;
 }
+/* Each card: white background, shadow, price badge top-right; .img height fixed for consistency */
 .single-tour {
   background: var(--white);
   border-radius: var(--borderRadius);
@@ -324,6 +330,7 @@ main {
   background: var(--primary-500);
   color: var(--white);
 }
+/* Responsive: 2 columns from 768px, 3 columns from 992px; align-items: start keeps card heights natural */
 @media screen and (min-width: 768px) {
   .tours {
     grid-template-columns: 1fr 1fr;
