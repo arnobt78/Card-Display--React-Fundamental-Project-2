@@ -9,7 +9,7 @@ A React application that fetches and displays a list of tours from an external A
 
 - **Live Demo:** [https://cardview-display.vercel.app/](https://cardview-display.vercel.app/)
 
-<img width="1547" height="914" alt="Screenshot 2026-03-10 at 16 25 03" src="https://github.com/user-attachments/assets/a0c71037-9490-4c4d-9315-8691d497358d" />
+![Screenshot 2026-03-10 at 16 25 03](https://github.com/user-attachments/assets/a0c71037-9490-4c4d-9315-8691d497358d)
 
 ## Table of Contents
 
